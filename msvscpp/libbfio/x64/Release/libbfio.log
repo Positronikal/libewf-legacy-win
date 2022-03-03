@@ -1,0 +1,14 @@
+﻿  libbfio_error.c
+  libbfio_file.c
+  libbfio_file_io_handle.c
+  libbfio_file_pool.c
+  libbfio_file_range.c
+  libbfio_file_range_io_handle.c
+  libbfio_handle.c
+  libbfio_memory_range.c
+  libbfio_memory_range_io_handle.c
+  libbfio_pool.c
+  libbfio_support.c
+  libbfio_system_string.c
+  Generating Code...
+  libbfio.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libbfio.lib

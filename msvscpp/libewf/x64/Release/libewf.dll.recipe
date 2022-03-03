@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\zlib.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libewf.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

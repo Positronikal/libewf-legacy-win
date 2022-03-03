@@ -1,0 +1,6 @@
+﻿  libcpath_error.c
+  libcpath_path.c
+  libcpath_support.c
+  libcpath_system_string.c
+  Generating Code...
+  libcpath.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcpath.lib

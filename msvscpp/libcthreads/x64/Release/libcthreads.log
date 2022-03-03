@@ -1,0 +1,13 @@
+﻿  libcthreads_condition.c
+  libcthreads_error.c
+  libcthreads_lock.c
+  libcthreads_mutex.c
+  libcthreads_queue.c
+  libcthreads_read_write_lock.c
+  libcthreads_repeating_thread.c
+  libcthreads_support.c
+  libcthreads_thread.c
+  libcthreads_thread_attributes.c
+  libcthreads_thread_pool.c
+  Generating Code...
+  libcthreads.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcthreads.lib

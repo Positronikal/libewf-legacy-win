@@ -1,0 +1,14 @@
+﻿  libsmdev_ata.c
+  libsmdev_debug.c
+  libsmdev_error.c
+  libsmdev_handle.c
+  libsmdev_notify.c
+  libsmdev_optical_disc.c
+  libsmdev_scsi.c
+  libsmdev_sector_range.c
+  libsmdev_string.c
+  libsmdev_support.c
+  libsmdev_track_value.c
+  libsmdev_usb.c
+  Generating Code...
+  libsmdev.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libsmdev.lib

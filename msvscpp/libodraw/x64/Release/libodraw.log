@@ -1,0 +1,35 @@
+﻿  libodraw_cue_parser.c
+X:\dev\0_forensic\libewf-legacy-win\libodraw\libodraw_cue_parser.c(1435,12): warning C4244: '=': conversion from 'int' to 'yytype_int16', possible loss of data
+  libodraw_cue_scanner.c
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(49,1): warning C4005: 'INT8_MIN': macro redefinition
+lex.yy.c(318): message : see previous definition of 'INT8_MIN'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(50,1): warning C4005: 'INT16_MIN': macro redefinition
+lex.yy.c(321): message : see previous definition of 'INT16_MIN'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(51,1): warning C4005: 'INT32_MIN': macro redefinition
+lex.yy.c(324): message : see previous definition of 'INT32_MIN'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(53,1): warning C4005: 'INT8_MAX': macro redefinition
+lex.yy.c(327): message : see previous definition of 'INT8_MAX'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(54,1): warning C4005: 'INT16_MAX': macro redefinition
+lex.yy.c(330): message : see previous definition of 'INT16_MAX'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(55,1): warning C4005: 'INT32_MAX': macro redefinition
+lex.yy.c(333): message : see previous definition of 'INT32_MAX'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(57,1): warning C4005: 'UINT8_MAX': macro redefinition
+lex.yy.c(336): message : see previous definition of 'UINT8_MAX'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(58,1): warning C4005: 'UINT16_MAX': macro redefinition
+lex.yy.c(339): message : see previous definition of 'UINT16_MAX'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\stdint.h(59,1): warning C4005: 'UINT32_MAX': macro redefinition
+lex.yy.c(342): message : see previous definition of 'UINT32_MAX'
+  libodraw_data_file.c
+  libodraw_data_file_descriptor.c
+  libodraw_debug.c
+  libodraw_error.c
+  libodraw_handle.c
+X:\dev\0_forensic\libewf-legacy-win\libodraw\libodraw_handle.c(930,58): warning C4244: '=': conversion from 'int' to 'uint8_t', possible loss of data
+  libodraw_io_handle.c
+  libodraw_notify.c
+  libodraw_sector_range.c
+  libodraw_support.c
+  libodraw_track_value.c
+  Generating Code...
+X:\dev\0_forensic\libewf-legacy-win\libodraw\libodraw_cue_parser.c(2560): warning C4702: unreachable code
+  libodraw.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libodraw.lib

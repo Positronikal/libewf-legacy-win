@@ -1,0 +1,6 @@
+﻿  libcnotify_print.c
+  libcnotify_stream.c
+  libcnotify_support.c
+  libcnotify_verbose.c
+  Generating Code...
+  libcnotify.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcnotify.lib

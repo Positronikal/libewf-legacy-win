@@ -1,0 +1,14 @@
+﻿  libmfdata_array.c
+  libmfdata_error.c
+  libmfdata_file.c
+  libmfdata_file_list.c
+  libmfdata_group.c
+  libmfdata_list.c
+  libmfdata_list_element.c
+  libmfdata_notify.c
+  libmfdata_range.c
+  libmfdata_segment.c
+  libmfdata_segment_table.c
+  libmfdata_support.c
+  Generating Code...
+  libmfdata.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libmfdata.lib

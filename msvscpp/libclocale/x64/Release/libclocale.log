@@ -1,0 +1,6 @@
+﻿  libclocale_codepage.c
+  libclocale_locale.c
+  libclocale_support.c
+  libclocale_wide_string.c
+  Generating Code...
+  libclocale.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libclocale.lib

@@ -1,0 +1,181 @@
+﻿  adler32.c
+X:\dev\0_forensic\zlib\adler32.c(64,11): warning C4131: 'adler32_z': uses old-style declarator
+X:\dev\0_forensic\zlib\adler32.c(135,11): warning C4131: 'adler32': uses old-style declarator
+X:\dev\0_forensic\zlib\adler32.c(144,11): warning C4131: 'adler32_combine_': uses old-style declarator
+X:\dev\0_forensic\zlib\adler32.c(173,11): warning C4131: 'adler32_combine': uses old-style declarator
+X:\dev\0_forensic\zlib\adler32.c(181,11): warning C4131: 'adler32_combine64': uses old-style declarator
+  compress.c
+X:\dev\0_forensic\zlib\compress.c(23,11): warning C4131: 'compress2': uses old-style declarator
+X:\dev\0_forensic\zlib\compress.c(69,11): warning C4131: 'compress': uses old-style declarator
+X:\dev\0_forensic\zlib\compress.c(82,11): warning C4131: 'compressBound': uses old-style declarator
+  crc32.c
+X:\dev\0_forensic\zlib\crc32.c(203,19): warning C4131: 'crc32_z': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(215,44): warning C4127: conditional expression is constant
+X:\dev\0_forensic\zlib\crc32.c(238,19): warning C4131: 'crc32': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(267,19): warning C4131: 'crc32_little': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(307,19): warning C4131: 'crc32_big': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(345,19): warning C4131: 'gf2_matrix_times': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(362,19): warning C4131: 'gf2_matrix_square': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(373,11): warning C4131: 'crc32_combine_': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(429,11): warning C4131: 'crc32_combine': uses old-style declarator
+X:\dev\0_forensic\zlib\crc32.c(437,11): warning C4131: 'crc32_combine64': uses old-style declarator
+  deflate.c
+X:\dev\0_forensic\zlib\deflate.c(202,19): warning C4131: 'slide_hash': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(229,15): warning C4131: 'deflateInit_': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(242,15): warning C4131: 'deflateInit2_': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(354,15): warning C4131: 'deflateStateCheck': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(377,15): warning C4131: 'deflateSetDictionary': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(446,15): warning C4131: 'deflateGetDictionary': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(468,15): warning C4131: 'deflateResetKeep': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(506,15): warning C4131: 'deflateReset': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(518,15): warning C4131: 'deflateSetHeader': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(529,14): warning C4131: 'deflatePending': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(543,15): warning C4131: 'deflatePrime': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(569,15): warning C4131: 'deflateParams': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(618,15): warning C4131: 'deflateTune': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(653,15): warning C4131: 'deflateBound': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(717,19): warning C4131: 'putShortMSB': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(731,15): warning C4131: 'flush_pending': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(764,15): warning C4131: 'deflate': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1077,15): warning C4131: 'deflateEnd': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1103,15): warning C4131: 'deflateCopy': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1165,15): warning C4131: 'read_buf': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1195,19): warning C4131: 'lm_init': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1237,19): warning C4131: 'longest_match': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1483,19): warning C4131: 'fill_window': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1495,29): warning C4127: conditional expression is constant
+X:\dev\0_forensic\zlib\deflate.c(1644,19): warning C4131: 'deflate_stored': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1693,42): warning C4244: '=': conversion from 'unsigned int' to 'Bytef', possible loss of data
+X:\dev\0_forensic\zlib\deflate.c(1694,46): warning C4244: '=': conversion from 'unsigned int' to 'Bytef', possible loss of data
+X:\dev\0_forensic\zlib\deflate.c(1695,42): warning C4244: '=': conversion from 'unsigned int' to 'Bytef', possible loss of data
+X:\dev\0_forensic\zlib\deflate.c(1696,47): warning C4244: '=': conversion from 'unsigned int' to 'Bytef', possible loss of data
+X:\dev\0_forensic\zlib\deflate.c(1825,19): warning C4131: 'deflate_fast': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(1927,19): warning C4131: 'deflate_slow': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(2058,19): warning C4131: 'deflate_rle': uses old-style declarator
+X:\dev\0_forensic\zlib\deflate.c(2131,19): warning C4131: 'deflate_huff': uses old-style declarator
+  gzclose.c
+X:\dev\0_forensic\zlib\gzclose.c(12,12): warning C4131: 'gzclose': uses old-style declarator
+  gzlib.c
+X:\dev\0_forensic\zlib\gzlib.c(76,15): warning C4131: 'gz_reset': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(92,16): warning C4131: 'gz_open': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(245,9): warning C4996: 'open': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _open. See online help for details.
+X:\dev\0_forensic\zlib\gzlib.c(271,16): warning C4131: 'gzopen': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(279,16): warning C4131: 'gzopen64': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(287,9): warning C4131: 'gzdopen': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(308,19): warning C4131: 'gzopen_w': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(317,12): warning C4131: 'gzbuffer': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(344,12): warning C4131: 'gzrewind': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(367,12): warning C4131: 'gzseek64': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(444,12): warning C4131: 'gzseek': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(456,12): warning C4131: 'gztell64': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(473,12): warning C4131: 'gztell': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(483,12): warning C4131: 'gzoffset64': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(506,12): warning C4131: 'gzoffset': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(516,12): warning C4131: 'gzeof': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(533,12): warning C4131: 'gzerror': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(554,12): warning C4131: 'gzclearerr': uses old-style declarator
+X:\dev\0_forensic\zlib\gzlib.c(580,15): warning C4131: 'gz_error': uses old-style declarator
+  gzread.c
+X:\dev\0_forensic\zlib\gzread.c(22,15): warning C4131: 'gz_load': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(35,15): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+X:\dev\0_forensic\zlib\gzread.c(57,15): warning C4131: 'gz_avail': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(92,15): warning C4131: 'gz_look': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(176,15): warning C4131: 'gz_decomp': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(230,15): warning C4131: 'gz_fetch': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(260,15): warning C4131: 'gz_skip': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(295,15): warning C4131: 'gz_read': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(317,14): warning C4245: '=': conversion from 'int' to 'unsigned int', signed/unsigned mismatch
+X:\dev\0_forensic\zlib\gzread.c(319,17): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+X:\dev\0_forensic\zlib\gzread.c(376,12): warning C4131: 'gzread': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(400,18): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+X:\dev\0_forensic\zlib\gzread.c(412,11): warning C4131: 'gzfread': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(448,12): warning C4131: 'gzgetc': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(472,18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+X:\dev\0_forensic\zlib\gzread.c(477,8): warning C4131: 'gzgetc_': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(484,9): warning C4131: 'gzungetc': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(544,12): warning C4131: 'gzgets': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(608,12): warning C4131: 'gzdirect': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(628,12): warning C4131: 'gzclose_r': uses old-style declarator
+X:\dev\0_forensic\zlib\gzread.c(651,11): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  gzwrite.c
+X:\dev\0_forensic\zlib\gzwrite.c(18,15): warning C4131: 'gz_init': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(74,15): warning C4131: 'gz_comp': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(89,20): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+X:\dev\0_forensic\zlib\gzwrite.c(110,24): warning C4996: 'write': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _write. See online help for details.
+X:\dev\0_forensic\zlib\gzwrite.c(146,15): warning C4131: 'gz_zero': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(179,15): warning C4131: 'gz_write': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(212,24): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+X:\dev\0_forensic\zlib\gzwrite.c(232,21): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+X:\dev\0_forensic\zlib\gzwrite.c(247,12): warning C4131: 'gzwrite': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(275,12): warning C4131: 'gzfwrite': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(305,12): warning C4131: 'gzputc': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(353,12): warning C4131: 'gzputs': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(371,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+X:\dev\0_forensic\zlib\gzwrite.c(554,12): warning C4131: 'gzflush': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(586,12): warning C4131: 'gzsetparams': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(628,12): warning C4131: 'gzclose_w': uses old-style declarator
+X:\dev\0_forensic\zlib\gzwrite.c(661,9): warning C4996: 'close': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _close. See online help for details.
+  infback.c
+X:\dev\0_forensic\zlib\infback.c(29,11): warning C4131: 'inflateBackInit_': uses old-style declarator
+X:\dev\0_forensic\zlib\infback.c(83,26): warning C4131: 'fixedtables': uses old-style declarator
+X:\dev\0_forensic\zlib\infback.c(251,11): warning C4131: 'inflateBack': uses old-style declarator
+X:\dev\0_forensic\zlib\infback.c(632,11): warning C4131: 'inflateBackEnd': uses old-style declarator
+  inffast.c
+X:\dev\0_forensic\zlib\inffast.c(51,11): warning C4131: 'inflate_fast': uses old-style declarator
+  inflate.c
+X:\dev\0_forensic\zlib\inflate.c(106,11): warning C4131: 'inflateStateCheck': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(120,11): warning C4131: 'inflateResetKeep': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(145,11): warning C4131: 'inflateReset': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(158,11): warning C4131: 'inflateReset2': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(196,11): warning C4131: 'inflateInit2_': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(240,11): warning C4131: 'inflateInit_': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(248,11): warning C4131: 'inflatePrime': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(279,26): warning C4131: 'fixedtables': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(397,11): warning C4131: 'updatewindow': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(623,11): warning C4131: 'inflate': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1278,11): warning C4131: 'inflateEnd': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1292,11): warning C4131: 'inflateGetDictionary': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1315,11): warning C4131: 'inflateSetDictionary': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1350,11): warning C4131: 'inflateGetHeader': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1378,14): warning C4131: 'syncsearch': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1401,11): warning C4131: 'inflateSync': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1452,11): warning C4131: 'inflateSyncPoint': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1462,11): warning C4131: 'inflateCopy': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1509,11): warning C4131: 'inflateUndermine': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1527,11): warning C4131: 'inflateValidate': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1542,11): warning C4131: 'inflateMark': uses old-style declarator
+X:\dev\0_forensic\zlib\inflate.c(1555,11): warning C4131: 'inflateCodesUsed': uses old-style declarator
+  inftrees.c
+X:\dev\0_forensic\zlib\inftrees.c(33,10): warning C4131: 'inflate_table': uses old-style declarator
+  trees.c
+X:\dev\0_forensic\zlib\trees.c(380,19): warning C4131: '_tr_init': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(408,19): warning C4131: 'init_block': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(452,19): warning C4131: 'pqdownheap': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(487,19): warning C4131: 'gen_bitlen': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(573,13): warning C4131: 'gen_codes': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(616,19): warning C4131: 'build_tree': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(704,19): warning C4131: 'scan_tree': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(724,40): warning C4244: '+=': conversion from 'int' to 'ush', possible loss of data
+X:\dev\0_forensic\zlib\trees.c(749,19): warning C4131: 'send_tree': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(800,19): warning C4131: 'build_bl_tree': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(835,19): warning C4131: 'send_all_trees': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(864,19): warning C4131: '_tr_stored_block': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(887,19): warning C4131: '_tr_flush_bits': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(897,19): warning C4131: '_tr_align': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(912,19): warning C4131: '_tr_flush_block': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(1015,19): warning C4131: '_tr_tally': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(1065,19): warning C4131: 'compress_block': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(1125,19): warning C4131: 'detect_data_type': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(1159,14): warning C4131: 'bi_reverse': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(1174,19): warning C4131: 'bi_flush': uses old-style declarator
+X:\dev\0_forensic\zlib\trees.c(1191,19): warning C4131: 'bi_windup': uses old-style declarator
+  uncompr.c
+X:\dev\0_forensic\zlib\uncompr.c(28,11): warning C4131: 'uncompress2': uses old-style declarator
+X:\dev\0_forensic\zlib\uncompr.c(87,11): warning C4131: 'uncompress': uses old-style declarator
+  zutil.c
+X:\dev\0_forensic\zlib\zutil.c(134,9): warning C4131: 'zError': uses old-style declarator
+X:\dev\0_forensic\zlib\zutil.c(306,12): warning C4131: 'zcalloc': uses old-style declarator
+X:\dev\0_forensic\zlib\zutil.c(316,12): warning C4131: 'zcfree': uses old-style declarator
+  Generating Code...
+     Creating library X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\zlib.lib and object X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\zlib.exp
+  zlib.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\zlib.dll

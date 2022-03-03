@@ -1,0 +1,8 @@
+﻿  libcfile_error.c
+  libcfile_file.c
+  libcfile_notify.c
+  libcfile_support.c
+  libcfile_system_string.c
+  libcfile_winapi.c
+  Generating Code...
+  libcfile.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcfile.lib

@@ -1,0 +1,22 @@
+﻿  byte_size_string.c
+  digest_hash.c
+  ewfinput.c
+  ewfrecover.c
+  ewftools_getopt.c
+  ewftools_glob.c
+  ewftools_output.c
+  ewftools_signal.c
+  ewftools_system_string.c
+  export_handle.c
+X:\dev\0_forensic\libewf-legacy-win\ewftools\export_handle.c(1328,12): warning C4267: 'function': conversion from 'size_t' to 'unsigned int', possible loss of data
+  guid.c
+  log_handle.c
+  platform.c
+X:\dev\0_forensic\libewf-legacy-win\ewftools\platform.c(78,20): warning C4996: 'GetVersion': was declared deprecated
+  process_status.c
+  storage_media_buffer.c
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 69 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ewfrecover.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\ewfrecover.exe

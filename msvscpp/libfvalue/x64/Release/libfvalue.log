@@ -1,0 +1,48 @@
+﻿  libfvalue_binary_data.c
+  libfvalue_data_handle.c
+  libfvalue_error.c
+  libfvalue_filetime.c
+  libfvalue_floating_point.c
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(1983,72): warning C4244: '=': conversion from 'int' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(1987,54): warning C4244: '=': conversion from 'uint16_t' to 'int8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(1988,49): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2121,54): warning C4244: '=': conversion from 'uint16_t' to 'int8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2436,33): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2451,33): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2468,34): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2524,33): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2540,34): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2598,34): warning C4244: '=': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2800,72): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2804,54): warning C4244: '=': conversion from 'uint32_t' to 'int8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2805,49): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(2938,54): warning C4244: '=': conversion from 'uint32_t' to 'int8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(3253,33): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(3268,33): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(3285,34): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(3341,33): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(3357,34): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_floating_point.c(3415,34): warning C4244: '=': conversion from 'uint32_t' to 'uint8_t', possible loss of data
+  libfvalue_integer.c
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2065,34): warning C4244: '=': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2080,34): warning C4244: '=': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2098,34): warning C4244: '=': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2154,34): warning C4244: '=': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2171,34): warning C4244: '=': conversion from 'const uint16_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2730,34): warning C4244: '=': conversion from 'const uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2745,34): warning C4244: '=': conversion from 'const uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2763,34): warning C4244: '=': conversion from 'const uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2819,34): warning C4244: '=': conversion from 'const uint32_t' to 'uint8_t', possible loss of data
+X:\dev\0_forensic\libewf-legacy-win\libfvalue\libfvalue_integer.c(2836,34): warning C4244: '=': conversion from 'const uint32_t' to 'uint8_t', possible loss of data
+  libfvalue_split_utf16_string.c
+  libfvalue_split_utf8_string.c
+  libfvalue_string.c
+  libfvalue_support.c
+  libfvalue_table.c
+  libfvalue_utf16_string.c
+  libfvalue_utf8_string.c
+  libfvalue_value.c
+  libfvalue_value_entry.c
+  libfvalue_value_type.c
+  Generating Code...
+  libfvalue.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libfvalue.lib

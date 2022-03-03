@@ -1,0 +1,40 @@
+﻿  libewf.c
+  libewf_checksum.c
+  libewf_chunk_data.c
+  libewf_chunk_table.c
+  libewf_compression.c
+  libewf_date_time.c
+  libewf_date_time_values.c
+  libewf_debug.c
+  libewf_deflate.c
+  libewf_empty_block.c
+  libewf_error.c
+  libewf_filename.c
+  libewf_file_entry.c
+  libewf_handle.c
+  libewf_hash_sections.c
+  libewf_hash_values.c
+  libewf_header_sections.c
+  libewf_header_values.c
+  libewf_io_handle.c
+  libewf_legacy.c
+  Generating Code...
+  Compiling...
+  libewf_media_values.c
+  libewf_metadata.c
+  libewf_notify.c
+  libewf_read_io_handle.c
+  libewf_section.c
+  libewf_sector_range.c
+  libewf_segment_file.c
+  libewf_segment_file_handle.c
+  libewf_segment_table.c
+  libewf_single_files.c
+  libewf_single_file_entry.c
+  libewf_single_file_tree.c
+  libewf_support.c
+  libewf_write_io_handle.c
+X:\dev\0_forensic\libewf-legacy-win\libewf\libewf_write_io_handle.c(1369,5): warning C4244: 'function': conversion from 'int' to 'int8_t', possible loss of data
+  Generating Code...
+     Creating library X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libewf.lib and object X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libewf.exp
+  libewf.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libewf.dll

@@ -1,0 +1,1476 @@
+Terminals unused in grammar
+
+   CUE_SEMI_COLON
+
+
+State 23 conflicts: 6 shift/reduce
+State 44 conflicts: 6 shift/reduce
+State 69 conflicts: 18 shift/reduce
+State 75 conflicts: 6 shift/reduce
+State 76 conflicts: 18 shift/reduce
+State 89 conflicts: 6 shift/reduce
+State 90 conflicts: 6 shift/reduce
+State 103 conflicts: 6 shift/reduce
+
+
+Grammar
+
+    0 $accept: cue_main $end
+
+    1 cue_main: cue_main_items cue_file cue_main_items cue_main_tracks
+
+    2 cue_main_items: %empty
+    3               | cue_main_item cue_main_items
+
+    4 cue_main_item: cue_catalog
+    5              | cue_cdtextfile
+    6              | cue_cdtext
+    7              | cue_remark_item
+    8              | cue_empty_line
+
+    9 cue_main_tracks: %empty
+   10                | cue_main_track cue_main_tracks
+
+   11 cue_main_track: cue_main_track_preceding_items cue_track cue_main_track_leading_items cue_main_track_index_items cue_main_track_trailing_items
+
+   12 cue_main_track_preceding_items: %empty
+   13                               | cue_main_track_preceding_item cue_main_track_preceding_items
+
+   14 cue_main_track_preceding_item: cue_file
+   15                              | cue_remark_item
+   16                              | cue_empty_line
+
+   17 cue_main_track_leading_items: %empty
+   18                             | cue_main_track_leading_item cue_main_track_leading_items
+
+   19 cue_main_track_leading_item: cue_cdtext
+   20                            | cue_flags
+   21                            | cue_isrc
+   22                            | cue_pregap
+   23                            | cue_remark_item
+   24                            | cue_empty_line
+
+   25 cue_main_track_index_items: %empty
+   26                           | cue_main_track_index_item cue_main_track_index_items
+
+   27 cue_main_track_index_item: cue_index
+   28                          | cue_remark_item
+   29                          | cue_empty_line
+
+   30 cue_main_track_trailing_items: %empty
+   31                              | cue_main_track_trailing_item cue_main_track_trailing_items
+
+   32 cue_main_track_trailing_item: cue_cdtext
+   33                             | cue_postgap
+   34                             | cue_remark_item
+   35                             | cue_empty_line
+
+   36 cue_catalog: CUE_CATALOG CUE_CATALOG_NUMBER CUE_END_OF_LINE
+
+   37 cue_cdtext: cue_cdtext_type CUE_STRING CUE_END_OF_LINE
+
+   38 cue_cdtext_type: CUE_CDTEXT_ARRANGER
+   39                | CUE_CDTEXT_COMPOSER
+   40                | CUE_CDTEXT_DISC_ID
+   41                | CUE_CDTEXT_GENRE
+   42                | CUE_CDTEXT_MESSAGE
+   43                | CUE_CDTEXT_PERFORMER
+   44                | CUE_CDTEXT_SIZE_INFO
+   45                | CUE_CDTEXT_SONGWRITER
+   46                | CUE_CDTEXT_TITLE
+   47                | CUE_CDTEXT_TOC_INFO1
+   48                | CUE_CDTEXT_TOC_INFO2
+   49                | CUE_CDTEXT_UPC_EAN
+
+   50 cue_cdtextfile: CUE_CDTEXTFILE CUE_STRING CUE_END_OF_LINE
+
+   51 cue_file: CUE_FILE CUE_STRING CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+   52 cue_flags: CUE_FLAGS cue_flags_types CUE_END_OF_LINE
+
+   53 cue_flags_types: %empty
+   54                | CUE_KEYWORD_STRING cue_flags_types
+
+   55 cue_index: CUE_INDEX CUE_2DIGIT CUE_MSF CUE_END_OF_LINE
+
+   56 cue_isrc: CUE_ISRC CUE_ISRC_CODE CUE_END_OF_LINE
+
+   57 cue_postgap: CUE_POSTGAP CUE_MSF CUE_END_OF_LINE
+
+   58 cue_pregap: CUE_PREGAP CUE_MSF CUE_END_OF_LINE
+
+   59 cue_remark_item: cue_lead_out
+   60                | cue_original_media_type
+   61                | cue_remark
+   62                | cue_run_out
+   63                | cue_session
+
+   64 cue_lead_out: CUE_REMARK_LEAD_OUT CUE_MSF CUE_END_OF_LINE
+
+   65 cue_original_media_type: CUE_REMARK_ORIGINAL_MEDIA_TYPE CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+   66 cue_remark: cue_remark_start error CUE_END_OF_LINE
+
+   67 cue_remark_start: CUE_REMARK
+
+   68 cue_run_out: CUE_REMARK_RUN_OUT CUE_MSF CUE_END_OF_LINE
+
+   69 cue_session: CUE_REMARK_SESSION CUE_2DIGIT CUE_END_OF_LINE
+
+   70 cue_track: CUE_TRACK CUE_2DIGIT CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+   71 cue_empty_line: CUE_END_OF_LINE
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256) 66
+CUE_END_OF_LINE (258) 36 37 50 51 52 55 56 57 58 64 65 66 68 69 70
+    71
+CUE_SEMI_COLON (259)
+CUE_2DIGIT <string_value> (260) 55 69 70
+CUE_CATALOG_NUMBER <string_value> (261) 36
+CUE_ISRC_CODE <string_value> (262) 56
+CUE_KEYWORD_STRING <string_value> (263) 51 54 65 70
+CUE_MSF <string_value> (264) 55 57 58 64 68
+CUE_STRING <string_value> (265) 37 50 51
+CUE_CATALOG (266) 36
+CUE_CDTEXTFILE (267) 50
+CUE_FLAGS (268) 52
+CUE_FILE (269) 51
+CUE_INDEX (270) 55
+CUE_ISRC (271) 56
+CUE_POSTGAP (272) 57
+CUE_PREGAP (273) 58
+CUE_REMARK (274) 67
+CUE_TRACK (275) 70
+CUE_CDTEXT_ARRANGER (276) 38
+CUE_CDTEXT_COMPOSER (277) 39
+CUE_CDTEXT_DISC_ID (278) 40
+CUE_CDTEXT_GENRE (279) 41
+CUE_CDTEXT_MESSAGE (280) 42
+CUE_CDTEXT_PERFORMER (281) 43
+CUE_CDTEXT_SIZE_INFO (282) 44
+CUE_CDTEXT_SONGWRITER (283) 45
+CUE_CDTEXT_TITLE (284) 46
+CUE_CDTEXT_TOC_INFO1 (285) 47
+CUE_CDTEXT_TOC_INFO2 (286) 48
+CUE_CDTEXT_UPC_EAN (287) 49
+CUE_REMARK_LEAD_OUT (288) 64
+CUE_REMARK_ORIGINAL_MEDIA_TYPE (289) 65
+CUE_REMARK_RUN_OUT (290) 68
+CUE_REMARK_SESSION (291) 69
+
+
+Nonterminals, with rules where they appear
+
+$accept (37)
+    on left: 0
+cue_main (38)
+    on left: 1, on right: 0
+cue_main_items (39)
+    on left: 2 3, on right: 1 3
+cue_main_item (40)
+    on left: 4 5 6 7 8, on right: 3
+cue_main_tracks (41)
+    on left: 9 10, on right: 1 10
+cue_main_track (42)
+    on left: 11, on right: 10
+cue_main_track_preceding_items (43)
+    on left: 12 13, on right: 11 13
+cue_main_track_preceding_item (44)
+    on left: 14 15 16, on right: 13
+cue_main_track_leading_items (45)
+    on left: 17 18, on right: 11 18
+cue_main_track_leading_item (46)
+    on left: 19 20 21 22 23 24, on right: 18
+cue_main_track_index_items (47)
+    on left: 25 26, on right: 11 26
+cue_main_track_index_item (48)
+    on left: 27 28 29, on right: 26
+cue_main_track_trailing_items (49)
+    on left: 30 31, on right: 11 31
+cue_main_track_trailing_item (50)
+    on left: 32 33 34 35, on right: 31
+cue_catalog (51)
+    on left: 36, on right: 4
+cue_cdtext (52)
+    on left: 37, on right: 6 19 32
+cue_cdtext_type (53)
+    on left: 38 39 40 41 42 43 44 45 46 47 48 49, on right: 37
+cue_cdtextfile (54)
+    on left: 50, on right: 5
+cue_file (55)
+    on left: 51, on right: 1 14
+cue_flags (56)
+    on left: 52, on right: 20
+cue_flags_types (57)
+    on left: 53 54, on right: 52 54
+cue_index (58)
+    on left: 55, on right: 27
+cue_isrc (59)
+    on left: 56, on right: 21
+cue_postgap (60)
+    on left: 57, on right: 33
+cue_pregap (61)
+    on left: 58, on right: 22
+cue_remark_item (62)
+    on left: 59 60 61 62 63, on right: 7 15 23 28 34
+cue_lead_out (63)
+    on left: 64, on right: 59
+cue_original_media_type (64)
+    on left: 65, on right: 60
+cue_remark (65)
+    on left: 66, on right: 61
+cue_remark_start (66)
+    on left: 67, on right: 66
+cue_run_out (67)
+    on left: 68, on right: 62
+cue_session (68)
+    on left: 69, on right: 63
+cue_track (69)
+    on left: 70, on right: 11
+cue_empty_line (70)
+    on left: 71, on right: 8 16 24 29 35
+
+
+State 0
+
+    0 $accept: . cue_main $end
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_CATALOG                     shift, and go to state 2
+    CUE_CDTEXTFILE                  shift, and go to state 3
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    $default  reduce using rule 2 (cue_main_items)
+
+    cue_main                 go to state 21
+    cue_main_items           go to state 22
+    cue_main_item            go to state 23
+    cue_catalog              go to state 24
+    cue_cdtext               go to state 25
+    cue_cdtext_type          go to state 26
+    cue_cdtextfile           go to state 27
+    cue_remark_item          go to state 28
+    cue_lead_out             go to state 29
+    cue_original_media_type  go to state 30
+    cue_remark               go to state 31
+    cue_remark_start         go to state 32
+    cue_run_out              go to state 33
+    cue_session              go to state 34
+    cue_empty_line           go to state 35
+
+
+State 1
+
+   71 cue_empty_line: CUE_END_OF_LINE .
+
+    $default  reduce using rule 71 (cue_empty_line)
+
+
+State 2
+
+   36 cue_catalog: CUE_CATALOG . CUE_CATALOG_NUMBER CUE_END_OF_LINE
+
+    CUE_CATALOG_NUMBER  shift, and go to state 36
+
+
+State 3
+
+   50 cue_cdtextfile: CUE_CDTEXTFILE . CUE_STRING CUE_END_OF_LINE
+
+    CUE_STRING  shift, and go to state 37
+
+
+State 4
+
+   67 cue_remark_start: CUE_REMARK .
+
+    $default  reduce using rule 67 (cue_remark_start)
+
+
+State 5
+
+   38 cue_cdtext_type: CUE_CDTEXT_ARRANGER .
+
+    $default  reduce using rule 38 (cue_cdtext_type)
+
+
+State 6
+
+   39 cue_cdtext_type: CUE_CDTEXT_COMPOSER .
+
+    $default  reduce using rule 39 (cue_cdtext_type)
+
+
+State 7
+
+   40 cue_cdtext_type: CUE_CDTEXT_DISC_ID .
+
+    $default  reduce using rule 40 (cue_cdtext_type)
+
+
+State 8
+
+   41 cue_cdtext_type: CUE_CDTEXT_GENRE .
+
+    $default  reduce using rule 41 (cue_cdtext_type)
+
+
+State 9
+
+   42 cue_cdtext_type: CUE_CDTEXT_MESSAGE .
+
+    $default  reduce using rule 42 (cue_cdtext_type)
+
+
+State 10
+
+   43 cue_cdtext_type: CUE_CDTEXT_PERFORMER .
+
+    $default  reduce using rule 43 (cue_cdtext_type)
+
+
+State 11
+
+   44 cue_cdtext_type: CUE_CDTEXT_SIZE_INFO .
+
+    $default  reduce using rule 44 (cue_cdtext_type)
+
+
+State 12
+
+   45 cue_cdtext_type: CUE_CDTEXT_SONGWRITER .
+
+    $default  reduce using rule 45 (cue_cdtext_type)
+
+
+State 13
+
+   46 cue_cdtext_type: CUE_CDTEXT_TITLE .
+
+    $default  reduce using rule 46 (cue_cdtext_type)
+
+
+State 14
+
+   47 cue_cdtext_type: CUE_CDTEXT_TOC_INFO1 .
+
+    $default  reduce using rule 47 (cue_cdtext_type)
+
+
+State 15
+
+   48 cue_cdtext_type: CUE_CDTEXT_TOC_INFO2 .
+
+    $default  reduce using rule 48 (cue_cdtext_type)
+
+
+State 16
+
+   49 cue_cdtext_type: CUE_CDTEXT_UPC_EAN .
+
+    $default  reduce using rule 49 (cue_cdtext_type)
+
+
+State 17
+
+   64 cue_lead_out: CUE_REMARK_LEAD_OUT . CUE_MSF CUE_END_OF_LINE
+
+    CUE_MSF  shift, and go to state 38
+
+
+State 18
+
+   65 cue_original_media_type: CUE_REMARK_ORIGINAL_MEDIA_TYPE . CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+    CUE_KEYWORD_STRING  shift, and go to state 39
+
+
+State 19
+
+   68 cue_run_out: CUE_REMARK_RUN_OUT . CUE_MSF CUE_END_OF_LINE
+
+    CUE_MSF  shift, and go to state 40
+
+
+State 20
+
+   69 cue_session: CUE_REMARK_SESSION . CUE_2DIGIT CUE_END_OF_LINE
+
+    CUE_2DIGIT  shift, and go to state 41
+
+
+State 21
+
+    0 $accept: cue_main . $end
+
+    $end  shift, and go to state 42
+
+
+State 22
+
+    1 cue_main: cue_main_items . cue_file cue_main_items cue_main_tracks
+
+    CUE_FILE  shift, and go to state 43
+
+    cue_file  go to state 44
+
+
+State 23
+
+    3 cue_main_items: cue_main_item . cue_main_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_CATALOG                     shift, and go to state 2
+    CUE_CDTEXTFILE                  shift, and go to state 3
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK                      [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_SESSION              [reduce using rule 2 (cue_main_items)]
+    $default                        reduce using rule 2 (cue_main_items)
+
+    cue_main_items           go to state 45
+    cue_main_item            go to state 23
+    cue_catalog              go to state 24
+    cue_cdtext               go to state 25
+    cue_cdtext_type          go to state 26
+    cue_cdtextfile           go to state 27
+    cue_remark_item          go to state 28
+    cue_lead_out             go to state 29
+    cue_original_media_type  go to state 30
+    cue_remark               go to state 31
+    cue_remark_start         go to state 32
+    cue_run_out              go to state 33
+    cue_session              go to state 34
+    cue_empty_line           go to state 35
+
+
+State 24
+
+    4 cue_main_item: cue_catalog .
+
+    $default  reduce using rule 4 (cue_main_item)
+
+
+State 25
+
+    6 cue_main_item: cue_cdtext .
+
+    $default  reduce using rule 6 (cue_main_item)
+
+
+State 26
+
+   37 cue_cdtext: cue_cdtext_type . CUE_STRING CUE_END_OF_LINE
+
+    CUE_STRING  shift, and go to state 46
+
+
+State 27
+
+    5 cue_main_item: cue_cdtextfile .
+
+    $default  reduce using rule 5 (cue_main_item)
+
+
+State 28
+
+    7 cue_main_item: cue_remark_item .
+
+    $default  reduce using rule 7 (cue_main_item)
+
+
+State 29
+
+   59 cue_remark_item: cue_lead_out .
+
+    $default  reduce using rule 59 (cue_remark_item)
+
+
+State 30
+
+   60 cue_remark_item: cue_original_media_type .
+
+    $default  reduce using rule 60 (cue_remark_item)
+
+
+State 31
+
+   61 cue_remark_item: cue_remark .
+
+    $default  reduce using rule 61 (cue_remark_item)
+
+
+State 32
+
+   66 cue_remark: cue_remark_start . error CUE_END_OF_LINE
+
+    error  shift, and go to state 47
+
+
+State 33
+
+   62 cue_remark_item: cue_run_out .
+
+    $default  reduce using rule 62 (cue_remark_item)
+
+
+State 34
+
+   63 cue_remark_item: cue_session .
+
+    $default  reduce using rule 63 (cue_remark_item)
+
+
+State 35
+
+    8 cue_main_item: cue_empty_line .
+
+    $default  reduce using rule 8 (cue_main_item)
+
+
+State 36
+
+   36 cue_catalog: CUE_CATALOG CUE_CATALOG_NUMBER . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 48
+
+
+State 37
+
+   50 cue_cdtextfile: CUE_CDTEXTFILE CUE_STRING . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 49
+
+
+State 38
+
+   64 cue_lead_out: CUE_REMARK_LEAD_OUT CUE_MSF . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 50
+
+
+State 39
+
+   65 cue_original_media_type: CUE_REMARK_ORIGINAL_MEDIA_TYPE CUE_KEYWORD_STRING . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 51
+
+
+State 40
+
+   68 cue_run_out: CUE_REMARK_RUN_OUT CUE_MSF . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 52
+
+
+State 41
+
+   69 cue_session: CUE_REMARK_SESSION CUE_2DIGIT . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 53
+
+
+State 42
+
+    0 $accept: cue_main $end .
+
+    $default  accept
+
+
+State 43
+
+   51 cue_file: CUE_FILE . CUE_STRING CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+    CUE_STRING  shift, and go to state 54
+
+
+State 44
+
+    1 cue_main: cue_main_items cue_file . cue_main_items cue_main_tracks
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_CATALOG                     shift, and go to state 2
+    CUE_CDTEXTFILE                  shift, and go to state 3
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK                      [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 2 (cue_main_items)]
+    CUE_REMARK_SESSION              [reduce using rule 2 (cue_main_items)]
+    $default                        reduce using rule 2 (cue_main_items)
+
+    cue_main_items           go to state 55
+    cue_main_item            go to state 23
+    cue_catalog              go to state 24
+    cue_cdtext               go to state 25
+    cue_cdtext_type          go to state 26
+    cue_cdtextfile           go to state 27
+    cue_remark_item          go to state 28
+    cue_lead_out             go to state 29
+    cue_original_media_type  go to state 30
+    cue_remark               go to state 31
+    cue_remark_start         go to state 32
+    cue_run_out              go to state 33
+    cue_session              go to state 34
+    cue_empty_line           go to state 35
+
+
+State 45
+
+    3 cue_main_items: cue_main_item cue_main_items .
+
+    $default  reduce using rule 3 (cue_main_items)
+
+
+State 46
+
+   37 cue_cdtext: cue_cdtext_type CUE_STRING . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 56
+
+
+State 47
+
+   66 cue_remark: cue_remark_start error . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 57
+
+
+State 48
+
+   36 cue_catalog: CUE_CATALOG CUE_CATALOG_NUMBER CUE_END_OF_LINE .
+
+    $default  reduce using rule 36 (cue_catalog)
+
+
+State 49
+
+   50 cue_cdtextfile: CUE_CDTEXTFILE CUE_STRING CUE_END_OF_LINE .
+
+    $default  reduce using rule 50 (cue_cdtextfile)
+
+
+State 50
+
+   64 cue_lead_out: CUE_REMARK_LEAD_OUT CUE_MSF CUE_END_OF_LINE .
+
+    $default  reduce using rule 64 (cue_lead_out)
+
+
+State 51
+
+   65 cue_original_media_type: CUE_REMARK_ORIGINAL_MEDIA_TYPE CUE_KEYWORD_STRING CUE_END_OF_LINE .
+
+    $default  reduce using rule 65 (cue_original_media_type)
+
+
+State 52
+
+   68 cue_run_out: CUE_REMARK_RUN_OUT CUE_MSF CUE_END_OF_LINE .
+
+    $default  reduce using rule 68 (cue_run_out)
+
+
+State 53
+
+   69 cue_session: CUE_REMARK_SESSION CUE_2DIGIT CUE_END_OF_LINE .
+
+    $default  reduce using rule 69 (cue_session)
+
+
+State 54
+
+   51 cue_file: CUE_FILE CUE_STRING . CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+    CUE_KEYWORD_STRING  shift, and go to state 58
+
+
+State 55
+
+    1 cue_main: cue_main_items cue_file cue_main_items . cue_main_tracks
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_FILE                        shift, and go to state 43
+    CUE_REMARK                      shift, and go to state 4
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_TRACK  reduce using rule 12 (cue_main_track_preceding_items)
+    $default   reduce using rule 9 (cue_main_tracks)
+
+    cue_main_tracks                 go to state 59
+    cue_main_track                  go to state 60
+    cue_main_track_preceding_items  go to state 61
+    cue_main_track_preceding_item   go to state 62
+    cue_file                        go to state 63
+    cue_remark_item                 go to state 64
+    cue_lead_out                    go to state 29
+    cue_original_media_type         go to state 30
+    cue_remark                      go to state 31
+    cue_remark_start                go to state 32
+    cue_run_out                     go to state 33
+    cue_session                     go to state 34
+    cue_empty_line                  go to state 65
+
+
+State 56
+
+   37 cue_cdtext: cue_cdtext_type CUE_STRING CUE_END_OF_LINE .
+
+    $default  reduce using rule 37 (cue_cdtext)
+
+
+State 57
+
+   66 cue_remark: cue_remark_start error CUE_END_OF_LINE .
+
+    $default  reduce using rule 66 (cue_remark)
+
+
+State 58
+
+   51 cue_file: CUE_FILE CUE_STRING CUE_KEYWORD_STRING . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 66
+
+
+State 59
+
+    1 cue_main: cue_main_items cue_file cue_main_items cue_main_tracks .
+
+    $default  reduce using rule 1 (cue_main)
+
+
+State 60
+
+   10 cue_main_tracks: cue_main_track . cue_main_tracks
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_FILE                        shift, and go to state 43
+    CUE_REMARK                      shift, and go to state 4
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_TRACK  reduce using rule 12 (cue_main_track_preceding_items)
+    $default   reduce using rule 9 (cue_main_tracks)
+
+    cue_main_tracks                 go to state 67
+    cue_main_track                  go to state 60
+    cue_main_track_preceding_items  go to state 61
+    cue_main_track_preceding_item   go to state 62
+    cue_file                        go to state 63
+    cue_remark_item                 go to state 64
+    cue_lead_out                    go to state 29
+    cue_original_media_type         go to state 30
+    cue_remark                      go to state 31
+    cue_remark_start                go to state 32
+    cue_run_out                     go to state 33
+    cue_session                     go to state 34
+    cue_empty_line                  go to state 65
+
+
+State 61
+
+   11 cue_main_track: cue_main_track_preceding_items . cue_track cue_main_track_leading_items cue_main_track_index_items cue_main_track_trailing_items
+
+    CUE_TRACK  shift, and go to state 68
+
+    cue_track  go to state 69
+
+
+State 62
+
+   13 cue_main_track_preceding_items: cue_main_track_preceding_item . cue_main_track_preceding_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_FILE                        shift, and go to state 43
+    CUE_REMARK                      shift, and go to state 4
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    $default  reduce using rule 12 (cue_main_track_preceding_items)
+
+    cue_main_track_preceding_items  go to state 70
+    cue_main_track_preceding_item   go to state 62
+    cue_file                        go to state 63
+    cue_remark_item                 go to state 64
+    cue_lead_out                    go to state 29
+    cue_original_media_type         go to state 30
+    cue_remark                      go to state 31
+    cue_remark_start                go to state 32
+    cue_run_out                     go to state 33
+    cue_session                     go to state 34
+    cue_empty_line                  go to state 65
+
+
+State 63
+
+   14 cue_main_track_preceding_item: cue_file .
+
+    $default  reduce using rule 14 (cue_main_track_preceding_item)
+
+
+State 64
+
+   15 cue_main_track_preceding_item: cue_remark_item .
+
+    $default  reduce using rule 15 (cue_main_track_preceding_item)
+
+
+State 65
+
+   16 cue_main_track_preceding_item: cue_empty_line .
+
+    $default  reduce using rule 16 (cue_main_track_preceding_item)
+
+
+State 66
+
+   51 cue_file: CUE_FILE CUE_STRING CUE_KEYWORD_STRING CUE_END_OF_LINE .
+
+    $default  reduce using rule 51 (cue_file)
+
+
+State 67
+
+   10 cue_main_tracks: cue_main_track cue_main_tracks .
+
+    $default  reduce using rule 10 (cue_main_tracks)
+
+
+State 68
+
+   70 cue_track: CUE_TRACK . CUE_2DIGIT CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+    CUE_2DIGIT  shift, and go to state 71
+
+
+State 69
+
+   11 cue_main_track: cue_main_track_preceding_items cue_track . cue_main_track_leading_items cue_main_track_index_items cue_main_track_trailing_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_FLAGS                       shift, and go to state 72
+    CUE_ISRC                        shift, and go to state 73
+    CUE_PREGAP                      shift, and go to state 74
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK                      [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_ARRANGER             [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_COMPOSER             [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_DISC_ID              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_GENRE                [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_MESSAGE              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_PERFORMER            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_SIZE_INFO            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_SONGWRITER           [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_TITLE                [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_TOC_INFO1            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_TOC_INFO2            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_UPC_EAN              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_SESSION              [reduce using rule 17 (cue_main_track_leading_items)]
+    $default                        reduce using rule 17 (cue_main_track_leading_items)
+
+    cue_main_track_leading_items  go to state 75
+    cue_main_track_leading_item   go to state 76
+    cue_cdtext                    go to state 77
+    cue_cdtext_type               go to state 26
+    cue_flags                     go to state 78
+    cue_isrc                      go to state 79
+    cue_pregap                    go to state 80
+    cue_remark_item               go to state 81
+    cue_lead_out                  go to state 29
+    cue_original_media_type       go to state 30
+    cue_remark                    go to state 31
+    cue_remark_start              go to state 32
+    cue_run_out                   go to state 33
+    cue_session                   go to state 34
+    cue_empty_line                go to state 82
+
+
+State 70
+
+   13 cue_main_track_preceding_items: cue_main_track_preceding_item cue_main_track_preceding_items .
+
+    $default  reduce using rule 13 (cue_main_track_preceding_items)
+
+
+State 71
+
+   70 cue_track: CUE_TRACK CUE_2DIGIT . CUE_KEYWORD_STRING CUE_END_OF_LINE
+
+    CUE_KEYWORD_STRING  shift, and go to state 83
+
+
+State 72
+
+   52 cue_flags: CUE_FLAGS . cue_flags_types CUE_END_OF_LINE
+
+    CUE_KEYWORD_STRING  shift, and go to state 84
+
+    $default  reduce using rule 53 (cue_flags_types)
+
+    cue_flags_types  go to state 85
+
+
+State 73
+
+   56 cue_isrc: CUE_ISRC . CUE_ISRC_CODE CUE_END_OF_LINE
+
+    CUE_ISRC_CODE  shift, and go to state 86
+
+
+State 74
+
+   58 cue_pregap: CUE_PREGAP . CUE_MSF CUE_END_OF_LINE
+
+    CUE_MSF  shift, and go to state 87
+
+
+State 75
+
+   11 cue_main_track: cue_main_track_preceding_items cue_track cue_main_track_leading_items . cue_main_track_index_items cue_main_track_trailing_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_INDEX                       shift, and go to state 88
+    CUE_REMARK                      shift, and go to state 4
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK                      [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_SESSION              [reduce using rule 25 (cue_main_track_index_items)]
+    $default                        reduce using rule 25 (cue_main_track_index_items)
+
+    cue_main_track_index_items  go to state 89
+    cue_main_track_index_item   go to state 90
+    cue_index                   go to state 91
+    cue_remark_item             go to state 92
+    cue_lead_out                go to state 29
+    cue_original_media_type     go to state 30
+    cue_remark                  go to state 31
+    cue_remark_start            go to state 32
+    cue_run_out                 go to state 33
+    cue_session                 go to state 34
+    cue_empty_line              go to state 93
+
+
+State 76
+
+   18 cue_main_track_leading_items: cue_main_track_leading_item . cue_main_track_leading_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_FLAGS                       shift, and go to state 72
+    CUE_ISRC                        shift, and go to state 73
+    CUE_PREGAP                      shift, and go to state 74
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK                      [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_ARRANGER             [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_COMPOSER             [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_DISC_ID              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_GENRE                [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_MESSAGE              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_PERFORMER            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_SIZE_INFO            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_SONGWRITER           [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_TITLE                [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_TOC_INFO1            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_TOC_INFO2            [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_CDTEXT_UPC_EAN              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 17 (cue_main_track_leading_items)]
+    CUE_REMARK_SESSION              [reduce using rule 17 (cue_main_track_leading_items)]
+    $default                        reduce using rule 17 (cue_main_track_leading_items)
+
+    cue_main_track_leading_items  go to state 94
+    cue_main_track_leading_item   go to state 76
+    cue_cdtext                    go to state 77
+    cue_cdtext_type               go to state 26
+    cue_flags                     go to state 78
+    cue_isrc                      go to state 79
+    cue_pregap                    go to state 80
+    cue_remark_item               go to state 81
+    cue_lead_out                  go to state 29
+    cue_original_media_type       go to state 30
+    cue_remark                    go to state 31
+    cue_remark_start              go to state 32
+    cue_run_out                   go to state 33
+    cue_session                   go to state 34
+    cue_empty_line                go to state 82
+
+
+State 77
+
+   19 cue_main_track_leading_item: cue_cdtext .
+
+    $default  reduce using rule 19 (cue_main_track_leading_item)
+
+
+State 78
+
+   20 cue_main_track_leading_item: cue_flags .
+
+    $default  reduce using rule 20 (cue_main_track_leading_item)
+
+
+State 79
+
+   21 cue_main_track_leading_item: cue_isrc .
+
+    $default  reduce using rule 21 (cue_main_track_leading_item)
+
+
+State 80
+
+   22 cue_main_track_leading_item: cue_pregap .
+
+    $default  reduce using rule 22 (cue_main_track_leading_item)
+
+
+State 81
+
+   23 cue_main_track_leading_item: cue_remark_item .
+
+    $default  reduce using rule 23 (cue_main_track_leading_item)
+
+
+State 82
+
+   24 cue_main_track_leading_item: cue_empty_line .
+
+    $default  reduce using rule 24 (cue_main_track_leading_item)
+
+
+State 83
+
+   70 cue_track: CUE_TRACK CUE_2DIGIT CUE_KEYWORD_STRING . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 95
+
+
+State 84
+
+   54 cue_flags_types: CUE_KEYWORD_STRING . cue_flags_types
+
+    CUE_KEYWORD_STRING  shift, and go to state 84
+
+    $default  reduce using rule 53 (cue_flags_types)
+
+    cue_flags_types  go to state 96
+
+
+State 85
+
+   52 cue_flags: CUE_FLAGS cue_flags_types . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 97
+
+
+State 86
+
+   56 cue_isrc: CUE_ISRC CUE_ISRC_CODE . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 98
+
+
+State 87
+
+   58 cue_pregap: CUE_PREGAP CUE_MSF . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 99
+
+
+State 88
+
+   55 cue_index: CUE_INDEX . CUE_2DIGIT CUE_MSF CUE_END_OF_LINE
+
+    CUE_2DIGIT  shift, and go to state 100
+
+
+State 89
+
+   11 cue_main_track: cue_main_track_preceding_items cue_track cue_main_track_leading_items cue_main_track_index_items . cue_main_track_trailing_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_POSTGAP                     shift, and go to state 101
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK                      [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_SESSION              [reduce using rule 30 (cue_main_track_trailing_items)]
+    $default                        reduce using rule 30 (cue_main_track_trailing_items)
+
+    cue_main_track_trailing_items  go to state 102
+    cue_main_track_trailing_item   go to state 103
+    cue_cdtext                     go to state 104
+    cue_cdtext_type                go to state 26
+    cue_postgap                    go to state 105
+    cue_remark_item                go to state 106
+    cue_lead_out                   go to state 29
+    cue_original_media_type        go to state 30
+    cue_remark                     go to state 31
+    cue_remark_start               go to state 32
+    cue_run_out                    go to state 33
+    cue_session                    go to state 34
+    cue_empty_line                 go to state 107
+
+
+State 90
+
+   26 cue_main_track_index_items: cue_main_track_index_item . cue_main_track_index_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_INDEX                       shift, and go to state 88
+    CUE_REMARK                      shift, and go to state 4
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK                      [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 25 (cue_main_track_index_items)]
+    CUE_REMARK_SESSION              [reduce using rule 25 (cue_main_track_index_items)]
+    $default                        reduce using rule 25 (cue_main_track_index_items)
+
+    cue_main_track_index_items  go to state 108
+    cue_main_track_index_item   go to state 90
+    cue_index                   go to state 91
+    cue_remark_item             go to state 92
+    cue_lead_out                go to state 29
+    cue_original_media_type     go to state 30
+    cue_remark                  go to state 31
+    cue_remark_start            go to state 32
+    cue_run_out                 go to state 33
+    cue_session                 go to state 34
+    cue_empty_line              go to state 93
+
+
+State 91
+
+   27 cue_main_track_index_item: cue_index .
+
+    $default  reduce using rule 27 (cue_main_track_index_item)
+
+
+State 92
+
+   28 cue_main_track_index_item: cue_remark_item .
+
+    $default  reduce using rule 28 (cue_main_track_index_item)
+
+
+State 93
+
+   29 cue_main_track_index_item: cue_empty_line .
+
+    $default  reduce using rule 29 (cue_main_track_index_item)
+
+
+State 94
+
+   18 cue_main_track_leading_items: cue_main_track_leading_item cue_main_track_leading_items .
+
+    $default  reduce using rule 18 (cue_main_track_leading_items)
+
+
+State 95
+
+   70 cue_track: CUE_TRACK CUE_2DIGIT CUE_KEYWORD_STRING CUE_END_OF_LINE .
+
+    $default  reduce using rule 70 (cue_track)
+
+
+State 96
+
+   54 cue_flags_types: CUE_KEYWORD_STRING cue_flags_types .
+
+    $default  reduce using rule 54 (cue_flags_types)
+
+
+State 97
+
+   52 cue_flags: CUE_FLAGS cue_flags_types CUE_END_OF_LINE .
+
+    $default  reduce using rule 52 (cue_flags)
+
+
+State 98
+
+   56 cue_isrc: CUE_ISRC CUE_ISRC_CODE CUE_END_OF_LINE .
+
+    $default  reduce using rule 56 (cue_isrc)
+
+
+State 99
+
+   58 cue_pregap: CUE_PREGAP CUE_MSF CUE_END_OF_LINE .
+
+    $default  reduce using rule 58 (cue_pregap)
+
+
+State 100
+
+   55 cue_index: CUE_INDEX CUE_2DIGIT . CUE_MSF CUE_END_OF_LINE
+
+    CUE_MSF  shift, and go to state 109
+
+
+State 101
+
+   57 cue_postgap: CUE_POSTGAP . CUE_MSF CUE_END_OF_LINE
+
+    CUE_MSF  shift, and go to state 110
+
+
+State 102
+
+   11 cue_main_track: cue_main_track_preceding_items cue_track cue_main_track_leading_items cue_main_track_index_items cue_main_track_trailing_items .
+
+    $default  reduce using rule 11 (cue_main_track)
+
+
+State 103
+
+   31 cue_main_track_trailing_items: cue_main_track_trailing_item . cue_main_track_trailing_items
+
+    CUE_END_OF_LINE                 shift, and go to state 1
+    CUE_POSTGAP                     shift, and go to state 101
+    CUE_REMARK                      shift, and go to state 4
+    CUE_CDTEXT_ARRANGER             shift, and go to state 5
+    CUE_CDTEXT_COMPOSER             shift, and go to state 6
+    CUE_CDTEXT_DISC_ID              shift, and go to state 7
+    CUE_CDTEXT_GENRE                shift, and go to state 8
+    CUE_CDTEXT_MESSAGE              shift, and go to state 9
+    CUE_CDTEXT_PERFORMER            shift, and go to state 10
+    CUE_CDTEXT_SIZE_INFO            shift, and go to state 11
+    CUE_CDTEXT_SONGWRITER           shift, and go to state 12
+    CUE_CDTEXT_TITLE                shift, and go to state 13
+    CUE_CDTEXT_TOC_INFO1            shift, and go to state 14
+    CUE_CDTEXT_TOC_INFO2            shift, and go to state 15
+    CUE_CDTEXT_UPC_EAN              shift, and go to state 16
+    CUE_REMARK_LEAD_OUT             shift, and go to state 17
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  shift, and go to state 18
+    CUE_REMARK_RUN_OUT              shift, and go to state 19
+    CUE_REMARK_SESSION              shift, and go to state 20
+
+    CUE_END_OF_LINE                 [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK                      [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_LEAD_OUT             [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_ORIGINAL_MEDIA_TYPE  [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_RUN_OUT              [reduce using rule 30 (cue_main_track_trailing_items)]
+    CUE_REMARK_SESSION              [reduce using rule 30 (cue_main_track_trailing_items)]
+    $default                        reduce using rule 30 (cue_main_track_trailing_items)
+
+    cue_main_track_trailing_items  go to state 111
+    cue_main_track_trailing_item   go to state 103
+    cue_cdtext                     go to state 104
+    cue_cdtext_type                go to state 26
+    cue_postgap                    go to state 105
+    cue_remark_item                go to state 106
+    cue_lead_out                   go to state 29
+    cue_original_media_type        go to state 30
+    cue_remark                     go to state 31
+    cue_remark_start               go to state 32
+    cue_run_out                    go to state 33
+    cue_session                    go to state 34
+    cue_empty_line                 go to state 107
+
+
+State 104
+
+   32 cue_main_track_trailing_item: cue_cdtext .
+
+    $default  reduce using rule 32 (cue_main_track_trailing_item)
+
+
+State 105
+
+   33 cue_main_track_trailing_item: cue_postgap .
+
+    $default  reduce using rule 33 (cue_main_track_trailing_item)
+
+
+State 106
+
+   34 cue_main_track_trailing_item: cue_remark_item .
+
+    $default  reduce using rule 34 (cue_main_track_trailing_item)
+
+
+State 107
+
+   35 cue_main_track_trailing_item: cue_empty_line .
+
+    $default  reduce using rule 35 (cue_main_track_trailing_item)
+
+
+State 108
+
+   26 cue_main_track_index_items: cue_main_track_index_item cue_main_track_index_items .
+
+    $default  reduce using rule 26 (cue_main_track_index_items)
+
+
+State 109
+
+   55 cue_index: CUE_INDEX CUE_2DIGIT CUE_MSF . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 112
+
+
+State 110
+
+   57 cue_postgap: CUE_POSTGAP CUE_MSF . CUE_END_OF_LINE
+
+    CUE_END_OF_LINE  shift, and go to state 113
+
+
+State 111
+
+   31 cue_main_track_trailing_items: cue_main_track_trailing_item cue_main_track_trailing_items .
+
+    $default  reduce using rule 31 (cue_main_track_trailing_items)
+
+
+State 112
+
+   55 cue_index: CUE_INDEX CUE_2DIGIT CUE_MSF CUE_END_OF_LINE .
+
+    $default  reduce using rule 55 (cue_index)
+
+
+State 113
+
+   57 cue_postgap: CUE_POSTGAP CUE_MSF CUE_END_OF_LINE .
+
+    $default  reduce using rule 57 (cue_postgap)

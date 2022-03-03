@@ -1,0 +1,11 @@
+﻿  libsmraw_error.c
+  libsmraw_filename.c
+  libsmraw_handle.c
+  libsmraw_information_file.c
+X:\dev\0_forensic\libewf-legacy-win\libsmraw\libsmraw_information_file.c(281,32): warning C4133: '=': incompatible types - from 'char [2]' to 'const system_character_t *'
+X:\dev\0_forensic\libewf-legacy-win\libsmraw\libsmraw_information_file.c(285,31): warning C4133: '=': incompatible types - from 'char [2]' to 'const system_character_t *'
+  libsmraw_io_handle.c
+  libsmraw_notify.c
+  libsmraw_support.c
+  Generating Code...
+  libsmraw.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libsmraw.lib

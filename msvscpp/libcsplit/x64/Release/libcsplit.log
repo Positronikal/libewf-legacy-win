@@ -1,0 +1,8 @@
+﻿  libcsplit_error.c
+  libcsplit_narrow_split_string.c
+  libcsplit_narrow_string.c
+  libcsplit_support.c
+  libcsplit_wide_split_string.c
+  libcsplit_wide_string.c
+  Generating Code...
+  libcsplit.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcsplit.lib

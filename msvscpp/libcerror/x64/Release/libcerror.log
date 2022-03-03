@@ -1,0 +1,5 @@
+﻿  libcerror_error.c
+  libcerror_support.c
+  libcerror_system.c
+  Generating Code...
+  libcerror.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcerror.lib

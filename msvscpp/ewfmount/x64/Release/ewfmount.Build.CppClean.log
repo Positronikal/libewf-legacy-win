@@ -1,0 +1,16 @@
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\platform.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\mount_handle.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\mount_fuse.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\mount_file_system.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\mount_file_entry.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\guid.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewftools_system_string.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewftools_signal.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewftools_output.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewftools_glob.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewftools_getopt.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewfinput.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\digest_hash.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\byte_size_string.obj
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\vc143.pdb
+x:\dev\0_forensic\libewf-legacy-win\msvscpp\ewfmount\x64\release\ewfmount.tlog\cl.command.1.tlog

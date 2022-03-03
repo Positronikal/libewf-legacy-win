@@ -1,0 +1,18 @@
+﻿  byte_size_string.c
+  digest_hash.c
+  ewfinfo.c
+  ewfinput.c
+  ewftools_getopt.c
+  ewftools_glob.c
+  ewftools_output.c
+  ewftools_signal.c
+  ewftools_system_string.c
+  guid.c
+  info_handle.c
+  platform.c
+X:\dev\0_forensic\libewf-legacy-win\ewftools\platform.c(78,20): warning C4996: 'GetVersion': was declared deprecated
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 57 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ewfinfo.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\ewfinfo.exe

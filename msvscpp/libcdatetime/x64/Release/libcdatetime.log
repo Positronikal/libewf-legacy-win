@@ -1,0 +1,6 @@
+﻿  libcdatetime_elements.c
+  libcdatetime_error.c
+  libcdatetime_support.c
+  libcdatetime_timestamp.c
+  Generating Code...
+  libcdatetime.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcdatetime.lib

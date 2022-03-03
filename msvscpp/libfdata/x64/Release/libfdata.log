@@ -1,0 +1,17 @@
+﻿  libfdata_area.c
+  libfdata_cache.c
+  libfdata_error.c
+  libfdata_list.c
+  libfdata_list_element.c
+  libfdata_mapped_range.c
+  libfdata_notify.c
+  libfdata_range.c
+  libfdata_range_list.c
+  libfdata_segments_array.c
+  libfdata_stream.c
+  libfdata_support.c
+  libfdata_tree.c
+  libfdata_tree_node.c
+  libfdata_vector.c
+  Generating Code...
+  libfdata.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libfdata.lib

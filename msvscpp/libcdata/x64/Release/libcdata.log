@@ -1,0 +1,13 @@
+﻿  libcdata_array.c
+  libcdata_btree.c
+  libcdata_btree_node.c
+  libcdata_btree_values_list.c
+  libcdata_error.c
+  libcdata_list.c
+  libcdata_list_element.c
+  libcdata_range_list.c
+  libcdata_range_list_value.c
+  libcdata_support.c
+  libcdata_tree_node.c
+  Generating Code...
+  libcdata.vcxproj -> X:\dev\0_forensic\libewf-legacy-win\msvscpp\x64\Release\libcdata.lib
