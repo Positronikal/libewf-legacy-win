@@ -5,7 +5,11 @@ ewf-tools for Windows x64 are located in:
 
 Otherwise, read the original wiki for building instructions
 (see below).
+
+See the wiki in this repo for utility description and usage.
+
 -----------------------------------------------------------------------
+From libyal/libewf-legacy README:
 
 libewf is a library to access the Expert Witness Compression Format
 (EWF).
